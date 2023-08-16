@@ -27,7 +27,7 @@ class DetailDataRemoteImpl: DetailDataRemote {
 
     
     func showData(id: String){
-        let urls = "https://api.rawg.io/api/games/\(id)?key=56712c4055aa42d094171803c14b0cf9"
+        let urls = "/\(id)?key=\(String.keyApi())".hostApi()
         network.fetchData(urlString: urls) { data in
             if let data = data {
                 let detail: DetailData = DetailData(id:data.id ,title: data.name, image: data.background_image, developerName: data.developers.first?.name ?? "", releaseDate: "Release Data \(data.released)", rating: data.rating.description, gamesCount: "\(data.reviews_count.description) played", detail: data.description_raw)
@@ -55,3 +55,4 @@ class DetailDataRemoteImpl: DetailDataRemote {
     }
 
 }
+

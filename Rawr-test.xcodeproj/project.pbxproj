@@ -39,6 +39,7 @@
 		D903E3162A8D08B000E38714 /* FavouriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D903E3152A8D08B000E38714 /* FavouriteViewModel.swift */; };
 		D903E3192A8D096300E38714 /* FavouriteLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D903E3182A8D096300E38714 /* FavouriteLocal.swift */; };
 		D903E31B2A8D271800E38714 /* BaseLocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D903E31A2A8D271800E38714 /* BaseLocalData.swift */; };
+		D903E31E2A8D373C00E38714 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D903E31D2A8D373C00E38714 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,8 @@
 		D903E3152A8D08B000E38714 /* FavouriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewModel.swift; sourceTree = "<group>"; };
 		D903E3182A8D096300E38714 /* FavouriteLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteLocal.swift; sourceTree = "<group>"; };
 		D903E31A2A8D271800E38714 /* BaseLocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLocalData.swift; sourceTree = "<group>"; };
+		D903E31C2A8D32F700E38714 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		D903E31D2A8D373C00E38714 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +159,7 @@
 				D903E2B62A8C852800E38714 /* Assets.xcassets */,
 				D903E2B82A8C852800E38714 /* LaunchScreen.storyboard */,
 				D903E2BB2A8C852800E38714 /* Info.plist */,
+				D903E31C2A8D32F700E38714 /* Config.xcconfig */,
 			);
 			path = "Rawr-test";
 			sourceTree = "<group>";
@@ -240,6 +244,7 @@
 			children = (
 				D903E2FA2A8CC4FC00E38714 /* UIView+Extension.swift */,
 				D903E3112A8D083C00E38714 /* UIViewController+Extension.swift */,
+				D903E31D2A8D373C00E38714 /* String+Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -480,6 +485,7 @@
 				D903E3072A8CDED200E38714 /* BaseRemoteData.swift in Sources */,
 				D903E2AE2A8C852700E38714 /* AppDelegate.swift in Sources */,
 				D903E2EF2A8C93C400E38714 /* ContainerFavouriteViewController.swift in Sources */,
+				D903E31E2A8D373C00E38714 /* String+Extension.swift in Sources */,
 				D903E3052A8CCC7700E38714 /* HomeDataResponse.swift in Sources */,
 				D903E2EC2A8C931000E38714 /* FavouriteViewController.swift in Sources */,
 				D903E2B02A8C852700E38714 /* SceneDelegate.swift in Sources */,
@@ -546,6 +552,7 @@
 /* Begin XCBuildConfiguration section */
 		D903E2D22A8C852900E38714 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D903E31C2A8D32F700E38714 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -594,7 +601,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -606,6 +613,7 @@
 		};
 		D903E2D32A8C852900E38714 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D903E31C2A8D32F700E38714 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -648,7 +656,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -660,6 +668,7 @@
 		};
 		D903E2D52A8C852900E38714 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D903E31C2A8D32F700E38714 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -692,6 +701,7 @@
 		};
 		D903E2D62A8C852900E38714 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D903E31C2A8D32F700E38714 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -724,6 +734,7 @@
 		};
 		D903E2D82A8C852900E38714 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D903E31C2A8D32F700E38714 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -744,6 +755,7 @@
 		};
 		D903E2D92A8C852900E38714 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D903E31C2A8D32F700E38714 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -764,6 +776,7 @@
 		};
 		D903E2DB2A8C852900E38714 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D903E31C2A8D32F700E38714 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -782,6 +795,7 @@
 		};
 		D903E2DC2A8C852900E38714 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D903E31C2A8D32F700E38714 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

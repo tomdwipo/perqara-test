@@ -1,0 +1,16 @@
+//
+//  Config.xcconfig
+//  Rawr-test
+//
+//  Created by Tommy-a on 16/08/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+BASE_URL = api.rawg.io/api/games
+RAW_KEY = 56712c4055aa42d094171803c14b0cf9
+
+
+

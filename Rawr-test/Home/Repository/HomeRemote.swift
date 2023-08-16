@@ -21,7 +21,7 @@ class HomeRemoteImpl: HomeRemote {
     private let remoteData = BaseRemoteData<HomeDataResponse>()
     
     func search(query: String){
-        let urlString = "https://api.rawg.io/api/games?key=56712c4055aa42d094171803c14b0cf9&pages=1&page_size=20&search=\(query)"
+        let urlString = "?key=\(String.keyApi())&pages=1&page_size=20&search=\(query)".hostApi()  
         remoteData.fetchData(urlString: urlString) { data in
             var homeData: [HomeViewData] = []
             if let result = data?.results {
